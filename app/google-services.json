@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669920077663",
+    "project_id": "ngopskuy-f228d",
+    "storage_bucket": "ngopskuy-f228d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669920077663:android:a7ba770be347ca84dd78ea",
+        "android_client_info": {
+          "package_name": "com.example.ngopskuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNb38kA0xPgncIT9WNdUGg20qZ_ZbfYto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

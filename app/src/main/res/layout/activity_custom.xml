@@ -1,0 +1,172 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Order Coffee"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- coffee strength level -->
+    <TextView
+        android:id="@+id/tv_coffee_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Strength Level"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_coffee_strength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weak (Rp 5.000)"
+            android:layout_marginBottom="4dp" />
+
+        <RadioButton
+            android:id="@+id/rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium (Rp 8.000)"
+            android:layout_marginBottom="4dp" />
+
+        <RadioButton
+            android:id="@+id/rb_strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strong (Rp 10.000)"
+            android:layout_marginBottom="8dp" />
+    </RadioGroup>
+
+    <!-- sugar level -->
+    <TextView
+        android:id="@+id/tv_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar Level"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_less_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less Sugar (No Additional Cost)"
+            android:layout_marginBottom="4dp" />
+
+        <RadioButton
+            android:id="@+id/rb_normal_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal Sugar (Rp 3.000)"
+            android:layout_marginBottom="8dp" />
+    </RadioGroup>
+
+    <!-- milk -->
+    <TextView
+        android:id="@+id/tv_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milk"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_milk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_no_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Milk (No Additional Cost)"
+            android:layout_marginBottom="4dp" />
+
+        <RadioButton
+            android:id="@+id/rb_with_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal Milk (Rp 5.000)"
+            android:layout_marginBottom="16dp" />
+    </RadioGroup>
+
+    <!-- total price and order buttton -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- total price -->
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total price: Rp 0"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:paddingRight="16dp" />
+
+        <!-- order button -->
+        <Button
+            android:id="@+id/tombol_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Home"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/custom_coffee"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/custom_coffee"
+            android:contentDescription="custom_coffee"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="69dp" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            android:contentDescription="Profile Icon" />
+    </LinearLayout>
+</LinearLayout>

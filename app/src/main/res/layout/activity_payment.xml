@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Detail Pembayaran -->
+    <TextView
+        android:id="@+id/payment_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Payment:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Pilihan Pembayaran -->
+    <RadioGroup
+        android:id="@+id/payment_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/payment_gopay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gopay" />
+
+        <RadioButton
+            android:id="@+id/payment_ovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ovo" />
+
+        <RadioButton
+            android:id="@+id/payment_dana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dana" />
+    </RadioGroup>
+
+    <!-- Tombol Konfirmasi Pembayaran -->
+    <Button
+        android:id="@+id/confirm_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Payment"
+        android:layout_marginTop="16dp" />
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Home"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/custom_coffee"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="69dp"
+            android:contentDescription="custom_coffee"
+            android:src="@drawable/custom_coffee" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Profile Icon"
+            android:src="@drawable/user" />
+    </LinearLayout>
+</LinearLayout>

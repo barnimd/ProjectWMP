@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+    >
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NgopsKuy"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_cart"
+            android:contentDescription="Cart Icon" />
+    </LinearLayout>
+    <!-- photo profile -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/user"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"/>
+
+    <!-- username -->
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <!-- log out button -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- navigation button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:layout_marginTop="1.5in">
+
+        <!-- Icon Home -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Home"
+            android:src="@drawable/home" />
+
+        <!-- Icon Custom Coffee -->
+        <ImageView
+            android:id="@+id/custom_coffee"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/custom_coffee"
+            android:contentDescription="custom_coffee"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="69dp" />
+
+        <!-- Icon User -->
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user"
+            android:contentDescription="Profile Icon" />
+    </LinearLayout>
+
+</LinearLayout>
